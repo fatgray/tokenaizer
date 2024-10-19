@@ -266,11 +266,18 @@ public class Tokenizer {
         return tokTokenBuffer.pos.line;
     }
     /**
-     * Вовзращает позцию в троке  для последнего прочитаного токенаю
+     * Вовзращает позцию в cтроке  для последнего прочитаного токенаю
      * @return позция в строке
      */
     public int curPos() {
         return tokTokenBuffer.pos.col;
+    }
+    /**
+     * Вовзращает id токена
+     * @return id типа токена
+     */
+    public int curTokenId() {
+        return tokTokenBuffer.state;
     }
     /**
      * получить текущий символ алфавита
